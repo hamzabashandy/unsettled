@@ -1,0 +1,66 @@
+body {
+    background-color: #000000;
+    margin: 0px;
+    overflow: hidden;
+            }
+
+#info {
+    position: absolute;
+    top: 0px; width: 100%;
+    color: #ffffff;
+    padding: 5px;
+    font-family:Monospace;
+    font-size:13px;
+    font-weight: bold;
+    text-align:center;
+            }
+
+h1 {
+    position: fixed;
+    left: .54em;
+    color: #ffffff;
+    font-size: 2.5em;
+    font-family: 'Raleway', sans-serif;
+            }
+            
+h2 {
+    position: fixed;
+    left: 1.4em;
+    padding-right: 1.4em;
+    top: 4.3em;
+    color: #ffffff;
+    font-size: 1em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;  
+            }
+
+.pano {
+    position: fixed;
+    bottom: 4em;
+    width: 4%;
+    opacity: .7;
+}
+
+/* unvisited link */
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: white;
+}
+
+/* mouse over link */
+a:hover {
+    color: black;
+    font-weight: 400;
+    border-bottom: 1px solid;
+}
+
+/* selected link */
+a:active {
+    color: white;
+    font-weight: 400
+}
