@@ -7,59 +7,61 @@ body {
 #info {
     position: absolute;
     top: 0px; width: 100%;
-    color: #ffffff;
-    padding: 5px;
-    font-family:Monospace;
-    font-size:13px;
-    font-weight: bold;
     text-align:center;
             }
 
 h1 {
     position: fixed;
-    left: .54em;
-    color: #ffffff;
-    font-size: 2.5em;
+    left: 1%;
+    color: #fff;
+    font-size: 4vh;
     font-family: 'Raleway', sans-serif;
-            }
+    text-align: left;
+    font-weight: 600;
+    }
             
 h2 {
     position: fixed;
-    left: 1.4em;
-    padding-right: 1.4em;
-    top: 4.3em;
-    color: #ffffff;
-    font-size: 1em;
+    left: 1%;
+    top: 7%;
+    color: #fff;
+    font-size: 1.5vh;
     font-family: 'Raleway', sans-serif;
-    font-weight: 200;  
-            }
+    font-weight: 400;  
+    text-align: left;
+    }
+
 
 .pano {
     position: fixed;
     bottom: 4em;
     width: 4%;
     opacity: .7;
+    margin: 0 auto;
 }
 
+/* LINKS */
 /* unvisited link */
-a:link {
-    color: white;
-    text-decoration: none;
+a{
+    color: #fff;
+    font-weight: 400;
+     text-decoration: none;
 }
-
 /* visited link */
-a:visited {
-    color: white;
-}
+/*a:visited {
+    color: black;
+}*/
 
 /* mouse over link */
 a:hover {
-    font-weight: 400;
-    border-bottom: 1px solid;
+    font-weight: 600;
+    padding-bottom: .2vh;
+    border-bottom: 4px solid;
+    color: #fff;
 }
 
 /* selected link */
-a:active {
-    color: white;
+/*a:active {
+    color: black;
     font-weight: 400
-}
+}*/
