@@ -15,7 +15,7 @@
 
 <div id="left"> 
         
-        <div id="info"><h1>Project Unsettled .</h1>
+        <div id="info"><a href="index.html"><h1>Project Unsettled .</h1></a>
             <h2> 
                 <a href="#">work</a> &nbsp|&nbsp  
                 <a href="#" class="inactive">articles</a> &nbsp|&nbsp 
@@ -25,15 +25,15 @@
         <ul id="accordion">
             <div class="sidebar_project_title">Q U S T U L &nbsp P R O J E C T</div>
             <a href="#p1"><li class="sidebar_title">I. Narration <div class="expand">&#9866;</div></li></a>
-            <p class="sidebar_text">This project is an alterations and additions to a tiny inner city terrace, including new bedrooms, bathrooms, kitchen, courtyard and living spaces. The design locates the new bedroom and bathrooms spaces above an open-plan living area that opens onto intimate garden spaces at either end of the property. <br/><br/>The project transforms what previously was a dark and introverted home into one of abundant natural light and generously proportioned spaces. A delicately detailed steel stair rises through the middle of the building and guides natural light from a large skylight above into the centre of the house. A wall of white mosaic tiles lines the back wall of the courtyard, reflecting northern light back into both the garden and rear kitchen space. <br/> Modest in scale, the new built form is a subtle play on the elongation of dwellings predominant in the narrow lots in inner-central Sydney. The pared back and understated interior is designed to foreground the rich texture of local brickwork surrounding the site.</p>
+            <p class="sidebar_text" id="s1">This project is an alterations and additions to a tiny inner city terrace, including new bedrooms, bathrooms, kitchen, courtyard and living spaces. The design locates the new bedroom and bathrooms spaces above an open-plan living area that opens onto intimate garden spaces at either end of the property. <br/><br/>The project transforms what previously was a dark and introverted home into one of abundant natural light and generously proportioned spaces. A delicately detailed steel stair rises through the middle of the building and guides natural light from a large skylight above into the centre of the house. A wall of white mosaic tiles lines the back wall of the courtyard, reflecting northern light back into both the garden and rear kitchen space. <br/> Modest in scale, the new built form is a subtle play on the elongation of dwellings predominant in the narrow lots in inner-central Sydney. The pared back and understated interior is designed to foreground the rich texture of local brickwork surrounding the site.</p>
             <a href="#p2"><li class="sidebar_title">II. Analysis<div class="expand">&#9866;</div></li></a>
-            <p class="sidebar_text">This project is an alterations and additions to a tiny inner city terrace, including new bedrooms, bathrooms, kitchen, courtyard and living spaces. The design locates the new bedroom and bathrooms spaces above an open-plan living area that opens onto intimate garden spaces at either end of the property.</p>
+            <p class="sidebar_text" id="s2">This project is an alterations and additions to a tiny inner city terrace, including new bedrooms, bathrooms, kitchen, courtyard and living spaces. The design locates the new bedroom and bathrooms spaces above an open-plan living area that opens onto intimate garden spaces at either end of the property.</p>
             <a href="#p3"><li class="sidebar_title">III. Maps Analysis<div class="expand">&#9866;</div></li></a>
-            <p class="sidebar_text">This project is an alterations and additions to a tiny inner city terrace, including new bedrooms, bathrooms, kitchen, courtyard and living spaces. The design locates the new bedroom and bathrooms spaces above an open-plan living area that opens onto intimate garden spaces at either end of the property.</p>
+            <p class="sidebar_text" id="s3">This project is an alterations and additions to a tiny inner city terrace, including new bedrooms, bathrooms, kitchen, courtyard and living spaces. The design locates the new bedroom and bathrooms spaces above an open-plan living area that opens onto intimate garden spaces at either end of the property.</p>
             <a href="#p4"><li class="sidebar_title">IV. Conclusion<div class="expand">&#9866;</div></li></a>
-            <p class="sidebar_text">This project is an alterations and additions to a tiny inner city terrace, including new bedrooms, bathrooms, kitchen, courtyard and living spaces. The design locates the new bedroom and bathrooms spaces above an open-plan living area that opens onto intimate garden spaces at either end of the property.</p>
+            <p class="sidebar_text" id="s4">This project is an alterations and additions to a tiny inner city terrace, including new bedrooms, bathrooms, kitchen, courtyard and living spaces. The design locates the new bedroom and bathrooms spaces above an open-plan living area that opens onto intimate garden spaces at either end of the property.</p>
             <a href="#p5"> <li class="sidebar_title">IV. About<div class="expand">&#9866;</div></li></a>
-            <p class="sidebar_text">This project is an alterations and additions to a tiny inner city terrace, including new bedrooms, bathrooms, kitchen, courtyard and living spaces. The design locates the new bedroom and bathrooms spaces above an open-plan living area that opens onto intimate garden spaces at either end of the property.</p>
+            <p class="sidebar_text" id="s5">This project is an alterations and additions to a tiny inner city terrace, including new bedrooms, bathrooms, kitchen, courtyard and living spaces. The design locates the new bedroom and bathrooms spaces above an open-plan living area that opens onto intimate garden spaces at either end of the property.</p>
         </ul>
         </div>
 </div>          
@@ -47,15 +47,52 @@
     
 <script>
  
-$("#accordion > a").click(function(){
+var myScrollFunc = function() {
+  var y = window.scrollY;
+    
+  if (y >= 0 && y < 300) {
+    $('#accordion > #s1').slideDown(300);
+    $('#accordion > #s2').slideUp(300);
+    $('#accordion > #s3').slideUp(300);
+    $('#accordion > #s4').slideUp(300);
+    $('#accordion > #s5').slideUp(300);
+      
+  } 
+  else if (y >= 300 && y < 700) {
+    $('#accordion > #s2').slideDown(300);
+    $('#accordion > #s1').slideUp(300);
+    $('#accordion > #s3').slideUp(300);
+    $('#accordion > #s4').slideUp(300);
+    $('#accordion > #s5').slideUp(300);
+      
+  } 
+  else if (y >= 700 && y < 1200){
+    $('#accordion > #s3').slideDown(300);
+    $('#accordion > #s2').slideUp(300);
+    $('#accordion > #s1').slideUp(300);
+    $('#accordion > #s4').slideUp(300);
+    $('#accordion > #s5').slideUp(300);
+  }
+    
+  else if (y >= 1200 && y < 2000){
+    $('#accordion > #s4').slideDown(300);
+    $('#accordion > #s1').slideUp(300);
+    $('#accordion > #s2').slideUp(300);
+    $('#accordion > #s3').slideUp(300);
+    $('#accordion > #s5').slideUp(300);
+  }
 
-	if(false == $(this).next().is(':visible')) {
-		$('#accordion > p').slideUp(300);
-	}
-	$(this).next().slideToggle(300);
-}); 
+  else {
+    $('#accordion > #s5').slideDown(300);
+    $('#accordion > #s1').slideUp(300);
+    $('#accordion > #s2').slideUp(300);
+    $('#accordion > #s3').slideUp(300);
+    $('#accordion > #s4').slideUp(300);
+  }
+    
+}; 
 
-$('#accordion > p:eq(0)').show();   
+window.addEventListener("scroll", myScrollFunc);
     
 </script>
         
