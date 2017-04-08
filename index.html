@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>UNSETTLED | Welcome</title>
+        <title>UNSETTLED</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
         <LINK REL=StyleSheet HREF="css/main.css" TYPE="text/css" MEDIA=screen>
@@ -10,21 +10,35 @@
     </head>
     
     <body>
-
+        
         <div id="container"></div>
-        <div id="info"><h1>Project Unsettled .</h1>
+        <div id="info">
+            <h1>Project Unsettled .</h1>
             <h2> 
-                <a href="P_Qustul-Project.html">work</a> &nbsp|&nbsp  
+                <label for="menu-toggle"><a id="mask1">work</a></label> &nbsp|&nbsp  
                 <a href="#">articles</a> &nbsp|&nbsp 
                 <a href="#">about</a>
             </h2>
             <img src="assets/Index/360.png" class="pano" alt="Drag with your mouse" title="Use your pointer to navigate this 360 photo">
         </div>
+        
+        <input type="checkbox" id="menu-toggle"/>
+        <div id="workMenu">
+        
+            <div id="bottom">
+                <a href="W_Qustul-Project.html" class="project one">QUSTUL SURVEY <q>2016 - 2017</q></a>
+                <a class="project two">ATLAS OF THE LOST LAND <q>2016 - Ongoing</q></a>
+                <div class="project three"><p id="none" >This space is left blank intentionally</p></div>
+                <div class="project four"><p id="none" >This space is left blank intentionally</p></div>
+                <div class="project five"><p id="none" >This space is left blank intentionally</p></div>
+                <div class="project six"><p id="none" >This space is left blank intentionally</p></div>  
+            </div>
+        </div>
 
-
+        
 <script src="js/three.min.js"></script>
 <script src="js/main.js"></script>
-
+    
     </body>
         
 </html>

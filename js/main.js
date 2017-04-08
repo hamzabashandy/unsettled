@@ -25,7 +25,7 @@
                 mesh = new THREE.Mesh( new THREE.SphereGeometry( 500, 60, 40 ), new THREE.MeshBasicMaterial( { map: THREE.ImageUtils.loadTexture( 'assets/Index/360_Qustul.jpg' ) } ) );
                 mesh.scale.x = -1;
                 scene.add( mesh );
-                document.getElementById("container").style.opacity = "0.9";
+                document.getElementById("container").style.opacity = ".9";
 
 
                 renderer = new THREE.WebGLRenderer();
@@ -104,12 +104,7 @@
 
                     fov += event.detail * 1.0;
 
-                }
-                
-                
-
-                
-                
+                }                                  
                 
 
             }
@@ -140,8 +135,7 @@
                 camera.position.z = - camera.target.z; 
                 */
 
-                renderer.render( scene, camera );
-                
-                
+                renderer.render( scene, camera );   
 
             }
+
