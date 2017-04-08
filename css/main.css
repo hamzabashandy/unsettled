@@ -34,7 +34,7 @@ h2 {
 
 .pano {
     position: fixed;
-    bottom: 4em;
+    bottom: 4vh;
     width: 4%;
     opacity: .7;
     margin: 0 auto;
@@ -55,9 +55,9 @@ label {
 }
 
 #bottom {
-    left: 22%;
+    left: 24%;
     position: fixed;
-    top: 11.6%;
+    top: 15%;
     width: 55%;
     height: 62%;
     /*outline: 1px solid;*/
@@ -65,7 +65,7 @@ label {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 50% 50%;
-    grid-gap: 50px 50px;
+    grid-gap: 50px 25px;
 }
 
 .project {
@@ -81,6 +81,7 @@ label {
   font-family: 'Raleway', sans-serif;
   letter-spacing: 2px;
   cursor: pointer;
+  background: rgba(0, 0, 0, 0.1);
 }
 
 q{
@@ -89,7 +90,7 @@ q{
     font-size: 1.6vh;
     padding-top: 1.5vh; 
     margin-top: 1vh;
-    font-weight: 200;   
+    font-weight: 200;
 }
 
 #none { font-weight: 600; font-size: 1.4vh; display: none; }
