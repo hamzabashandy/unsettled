@@ -155,10 +155,11 @@ img {
 
 /* LINKS */
 /* unvisited link */
-a:link {
-    text-decoration: none;
+a{
+    color: #fff;
+    font-weight: 400;
+     text-decoration: none;
 }
-
 /* visited link */
 /*a:visited {
     color: black;
@@ -169,7 +170,7 @@ a:hover {
     font-weight: 600;
     padding-bottom: .2vh;
     border-bottom: 4px solid;
-    color: #000;
+    color: #fff;
 }
 
 /* selected link */
