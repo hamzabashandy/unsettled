@@ -126,7 +126,6 @@ ul {
 	display: none;
 }
 
-
 /* LEDT_END */
 
 /* RIGHT_START */
@@ -167,7 +166,7 @@ a:hover {
     font-weight: 600;
     padding-bottom: .2vh;
     border-bottom: 4px solid;
-    color: #fff;
+    color: #000;
 }
 
 /* selected link */

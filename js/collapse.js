@@ -1,4 +1,4 @@
-$("#accordion > a").click(function(){
+/* $("#accordion > a").click(function(){
 
 	if(false == $(this).next().is(':visible')) {
 		$('#accordion > p').slideUp(300);
@@ -6,9 +6,9 @@ $("#accordion > a").click(function(){
 	$(this).next().slideToggle(300);
 }); 
 
-$('#accordion > p:eq(0)').show();
+$('#accordion > p:eq(0)').show(); 
     
-/* myID = document.getElementById("#accordion > p");
+ myID = document.getElementById("#accordion > p");
 
 var myScrollFunc = function() {
   var y = window.scrollY;
