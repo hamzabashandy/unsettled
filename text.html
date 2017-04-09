@@ -81,17 +81,19 @@ environmentally efficient as possible in Egypt, as well as ultra-low maintenance
         
         <script>
         $(document).ready(function(){
+            $("#text1").hide();
+            $("#text2").hide(); 
             
-    $("#paper1").click(function(){
-        $("#text1").toggle();
-        $("#text2").hide();
-    });
-            
-    $("#paper2").click(function(){
-        $("#text1").hide();
-        $("#text2").toggle();
-    });
-});
+                $("#paper1").click(function(){
+                    $("#text1").toggle();
+                    $("#text2").hide();
+                });
+
+                $("#paper2").click(function(){
+                    $("#text1").hide();
+                    $("#text2").toggle();
+                });
+        });
         </script>
     </body>
         

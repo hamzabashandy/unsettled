@@ -17,7 +17,7 @@ html, body {
 #right {
     width: 70%;
     overflow-x: hidden;
-    height: 2800px;
+    height: 2500px;
     /*outline: 1px solid;*/
     position: absolute;
     right: 0;
@@ -130,7 +130,13 @@ ul {
 
 /* RIGHT_START */
 
-.project {
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 76px 250px 250px 460px;
+}
+
+.box {
   color: #fff;
   padding: 1em;
   display: flex;
