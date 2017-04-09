@@ -48,10 +48,10 @@ label {
   display: none; /* hide the checkbox */
 }
 #workMenu {
-  display: none;
+  display: block;
 }
 #menu-toggle:checked + #workMenu {
-  display: block;
+  display: none;
 }
 
 #bottom {
