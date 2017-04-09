@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>UNSETTLED | Qustul Projects</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <LINK REL=StyleSheet HREF="css/about.css" TYPE="text/css" MEDIA=screen>
+        <link href="https://fonts.googleapis.com/css?family=Raleway:200,400,600" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    </head>
+    
+    <body>
+
+
+<div id="left"> 
+        
+        <div id="info"><a href="index.html"><h1>Project Unsettled .</h1></a>
+            <h2> 
+                <a href="work.html" class="inactive">work</a> &nbsp|&nbsp  
+                <a href="text.html" class="inactive">text</a> &nbsp|&nbsp 
+                <a href="#">about</a>
+            </h2>
+            
+        <ul id="accordion">
+            <div class="sidebar_project_title"> &nbsp </div>
+            
+            <a href="#p1"><li class="sidebar_title" id="theProject">I. The Project </li></a>
+            
+            
+            <li class="sidebar_title">II. Who We Are</li>
+            <div class="sidebar_text" id="s2"><li class="paperList" id="mennaAgha"><a href="#">Menna Agha</a></li></div>
+            
+            <li class="sidebar_title">III. Reach Us</li>
+            <div class="sidebar_text" id="s3"><li class="paperList">E-mail</li><li class="paperList"><a href="mailto:menna.agha@gmail.com"> menna.agha@gmail.com </a></li></div>
+        </ul>
+        </div>
+</div> 
+        
+<div id="right">
+    
+    <div id="text1">
+        <div class="text abstract_title">The Project: </div>
+        <div class="text abstract_text"><p>Two Sides of a Barricade argues that to construct global democracy, conflict and dissent must be taken seriously. Christian Scholl explores the political significance of the confrontations within four sites of interaction: bodies, space, communication, and law. Each site of struggle provides a different entry point to understand the influence of protester and police tactics on each other. At the same time, the four sites of struggle allow a comprehensive analysis of how the contestation of global hegemonic forces during summit protests trigger a preemptive shift in social control through increased deployment of biopolitical forms of power. <br><br> This chapter explains the evolution of academic tetrafluoroethylene (TFE) barricades for the purpose of preparing fluoropolymers, which to the best of knowledge began a little over 25 years ago with a facility at Clemson University's Hunter Laboratories. It explains initial barricade was primarily for TFE cylinder storage, from which approximately 10 g of TFE was destabilized at a time and used to prepare the initial perfluorosulfonimide polymer electrolytes in the DesMarteau laboratory. One of the most common causes of accidents when working with TFE is opening a valve too rapidly when a high pressure differential exists in the tubing/pipeline on the two sides of the valve. Due to adiabatic compression, localized heating can cause high temperatures to be reached, which can end up triggering an explosion.</p></div>
+    </div>
+    
+    <div id="text2">
+        <div class="text abstract_title">Menna Agha </div>
+        <div class="text abstract_title"> <img src="assets/about/DSC_0042.JPG" alt="Menna Agha"> </div>
+        <div class="text abstract_text"><p>OMA is an international practice operating within the traditional boundaries of architecture and urbanism. AMO, a research and design studio, applies architectural thinking to domains beyond.<br><br>OMA is led by nine partners - Rem Koolhaas, Ellen van Loon, Reinier de Graaf, Shohei Shigematsu, Iyad Alsaka, David Gianotten, Chris van Duijn, Ippolito Pestellini Laparelli, Jason Long - and maintains offices in Rotterdam, New York, Beijing, Hong Kong, Doha, Dubai and Perth.<br><br>OMA-designed buildings currently under construction include, Taipei Performing Arts Centre, the renovation of Kaufhaus des Westens (KaDeWe) in Berlin, Qatar National Library, Qatar Foundation Headquarters, Bryghusprojektet in Copenhagen, Fondation d'Entreprise Galeries Lafayette in Paris, and Prince Plaza in Shenzhen.<br><br>OMA-designed buildings currently under construction include, Taipei Performing Arts Centre, the renovation of Kaufhaus des Westens (KaDeWe) in Berlin, Qatar National Library, Qatar Foundation Headquarters, Bryghusprojektet in Copenhagen, Fondation d'Entreprise Galeries Lafayette in Paris, and Prince Plaza in Shenzhen.</p></div>
+    </div>
+    
+
+    
+</div>
+        
+        <script>
+        $(document).ready(function(){
+            
+    $("#theProject").click(function(){
+        $("#text1").toggle();
+        $("#text2").hide();
+    });
+            
+    $("#mennaAgha").click(function(){
+        $("#text1").hide();
+        $("#text2").toggle();
+    });
+});
+        </script>
+    </body>
+        
+</html>
