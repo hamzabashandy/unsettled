@@ -45,7 +45,8 @@ h1 {
     }
             
 h2 {
-    position: fixed;
+    display: inline-block;
+    
     left: 1%;
     padding-right: 1.4em;
     top: 7%;

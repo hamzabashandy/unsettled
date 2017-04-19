@@ -38,6 +38,21 @@ h2 {
     width: 4%;
     opacity: .7;
     margin: 0 auto;
+    left: 49%; 
+}
+
+.cSoon {
+    position: fixed;
+    margin: 0 auto;
+    width: 100%;
+    bottom: 50%;
+    color: #fff;
+    font-size: 6vh;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-weight: 200;
+    letter-spacing: 10px;
+    opacity: .5;
 }
 
 label {
@@ -122,3 +137,4 @@ h2 a:hover {
     border-bottom: 4px solid;
     text-decoration: none;
 }
+

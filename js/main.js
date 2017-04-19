@@ -22,7 +22,7 @@
 
                 scene = new THREE.Scene();
 
-                mesh = new THREE.Mesh( new THREE.SphereGeometry( 500, 60, 40 ), new THREE.MeshBasicMaterial( { map: THREE.ImageUtils.loadTexture( 'assets/Index/360_Qustul.jpg' ) } ) );
+                mesh = new THREE.Mesh( new THREE.SphereGeometry( 500, 60, 40 ), new THREE.MeshBasicMaterial( { map: THREE.ImageUtils.loadTexture( 'assets/Index/360_Q.jpg' ) } ) );
                 mesh.scale.x = -1;
                 scene.add( mesh );
                 document.getElementById("container").style.opacity = ".9";
